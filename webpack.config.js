@@ -13,12 +13,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader'
+                  MiniCssExtractPlugin.loader,
+                  'css-loader',
+                  'sass-loader'
                 ],
-            },
+              },
         ],
     },
     plugins: [
@@ -28,6 +29,6 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].[contenthash].css',
-        }),
+          }),
     ],
 };

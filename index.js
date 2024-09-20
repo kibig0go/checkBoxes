@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles/main.scss';
 
 let checkboxes;
 let selectedOrder;
