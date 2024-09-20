@@ -1,3 +1,5 @@
+import './styles.css';
+
 let checkboxes;
 let selectedOrder;
 const selectedIds = [];
